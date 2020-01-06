@@ -39,6 +39,27 @@ export default () => {
             Leo-RASPAUD
           </a>
         </div>
+        <div>
+          <p>Youtube channels:</p>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC-BgJSCQ-7ZND43Qo_t8-LA?view_as=subscriber"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              CSS-tricks
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCgVmj-dtqY7Lq9enJ076C2w?view_as=subscriber"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Léo Raspaud
+            </a>
+          </li>
+        </div>
       </div>
     </Container>
   );
