@@ -3,13 +3,14 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   position: absolute;
-  top: 50px;
+  top: 0px;
   display: flex;
   flex-direction: column;
-  transform: ${props => (props.isOpen ? 'translateX(0px )' : 'translateX(-125px)')};
+  right: 0;
+  transition: all 0.15s ease-in-out;
+  transform: ${props => (props.isOpen ? 'translateX(0px)' : 'translateX(125px)')};
 `;
 
-// transform: translateX(-125px);
 const Link = styled.a`
   padding: 16px;
 `;
@@ -31,9 +32,6 @@ const LinkItem = ({ children, href, id, setOpen }) => {
 export default ({ isOpen, setOpen }) => {
   return (
     <Container isOpen={isOpen}>
-      <LinkItem id="home" href="" setOpen={setOpen}>
-        Home
-      </LinkItem>
       <LinkItem id="about" href="#portfolio" setOpen={setOpen}>
         Portfolio
       </LinkItem>

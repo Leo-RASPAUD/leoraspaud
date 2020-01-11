@@ -48,7 +48,6 @@ export default ({ setOpen, isOpen }) => {
         />
       </Mobile>
       <Desktop>
-        <Link href="#about">About</Link>
         <Link href="#portfolio">Portfolio</Link>
         <Link href="#resume">Resume</Link>
       </Desktop>

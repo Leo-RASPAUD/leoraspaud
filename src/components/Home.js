@@ -5,21 +5,22 @@ import { MdFileDownload } from 'react-icons/md';
 
 const bounce = keyframes`
   0% {
-    bottom: 64px;
+    bottom: 25%;
   }
 
   50% {
-    bottom: 48px;
+    bottom: 27%;
   }
 
   100% {
-    bottom: 64px;
+    bottom: 25%;
   }
 `;
 
 const Container = styled.div`
   padding: 0 16px;
   min-height: 100vh;
+  position: relative;
 `;
 
 const Scroll = styled.button`
@@ -32,7 +33,6 @@ const Scroll = styled.button`
   border-bottom: 4px solid black;
   transform: rotate(45deg);
   position: absolute;
-  bottom: 48px;
   left: calc(50% - 32px);
   animation: ${bounce} 1.25s ease-in-out infinite;
 `;
