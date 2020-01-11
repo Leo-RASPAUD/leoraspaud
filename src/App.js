@@ -28,7 +28,7 @@ function App() {
         <Resume />
         <Contact />
       </Content>
-      <Sidebar setOpen={setOpen} />
+      <Sidebar setOpen={setOpen} isOpen={isOpen} />
     </Container>
   );
 }
