@@ -1,27 +1,74 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
+import Button from './Button';
+import { MdFileDownload } from 'react-icons/md';
+
+const bounce = keyframes`
+  0% {
+    bottom: 64px;
+  }
+
+  50% {
+    bottom: 48px;
+  }
+
+  100% {
+    bottom: 64px;
+  }
+`;
 
 const Container = styled.div`
-  background-color: #ff6f61;
-  display: flex;
-  justify-content: center;
-  padding: 15% 16px 0 16px;
-  min-height: 75vh;
+  padding: 0 16px;
+  min-height: 100vh;
+`;
+
+const Scroll = styled.button`
+  outline: none;
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 48px;
+  left: calc(50% - 32px);
+  animation: ${bounce} 1.25s ease-in-out infinite;
 `;
 
 export default () => {
+  const [scroll, setScroll] = useState(window.pageYOffset);
+
+  const handleScroll = () => {
+    setScroll(window.pageYOffset);
+  };
+
+  const downloadResume = () => {
+    window.open('https://files-leoraspaud.s3.amazonaws.com/Resume.pdf');
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <Container id="about">
-      <div>
-        <p>
-          I am a senior software engineer with good knowledge of front-end techniques and many years of full stack
-          development. Creating a great user experience and a clean code is always a priority for me.
-        </p>
-        <p>
-          I’m currently working with ReactJS / GraphQL / AWS but I've worked with different technologies over the years
-          such as Java, Python, Ruby...
-        </p>
-      </div>
+    <Container id="home">
+      <h1>Léo Raspaud</h1>
+      <p>French senior software engineer currently based in Sydney.</p>
+      <Button onClick={downloadResume} style={{ marginTop: 16 }}>
+        <MdFileDownload />
+        <span style={{ marginLeft: 16 }}>Resume</span>
+      </Button>
+      <Scroll
+        style={{ display: scroll < 200 ? 'block' : 'none' }}
+        onClick={() => {
+          document.getElementById('about').scrollIntoView({
+            behavior: 'smooth',
+          });
+        }}
+      />
     </Container>
   );
 };
