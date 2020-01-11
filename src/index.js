@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './font/stylesheet.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './font/stylesheet.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

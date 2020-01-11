@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import profile from '../images/profile.jpg';
 import { HamburgerSlider } from 'react-animated-burgers';
-import Sidebar from './Sidebar';
 
 const Header = styled.header`
   display: flex;
@@ -42,13 +41,11 @@ export default ({ setOpen, isOpen }) => {
       <Mobile>
         <HamburgerSlider
           buttonWidth={32}
-          barColor="black"
           isActive={isOpen}
           toggleButton={() => {
             setOpen(!isOpen);
           }}
         />
-        <Sidebar setOpen={setOpen} />
       </Mobile>
       <Desktop>
         <Link href="#about">About</Link>

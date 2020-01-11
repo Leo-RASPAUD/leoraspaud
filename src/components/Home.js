@@ -38,7 +38,7 @@ const Scroll = styled.button`
 `;
 
 export default () => {
-  const [scroll, setScroll] = useState(window.pageYOffset);
+  const [scroll, setScroll] = useState(150);
 
   const handleScroll = () => {
     setScroll(window.pageYOffset);
@@ -51,7 +51,7 @@ export default () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, []); // eslint-disable-line
 
   return (
     <Container id="home">
