@@ -4,11 +4,12 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 `;
 
 export default () => {
   return (
-    <Container id="about">
+    <Container id="portfolio">
       <div>
         <p>Here's a list of project I'm working on:</p>
         <ul>

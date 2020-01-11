@@ -1,25 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import profile from '../images/profile.jpg';
+import { HamburgerSlider } from 'react-animated-burgers';
+import Sidebar from './Sidebar';
 
 const Header = styled.header`
-  background-color: #12343b;
   display: flex;
-  justify-content: space-around;
   padding: 16px;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Link = styled.a`
-  font-size: 18px;
-  color: #e1b382;
+  font-size: 24px;
+  margin: 0 8px;
+  text-decoration: none;
 `;
 
-export default () => {
+const Profile = styled.img`
+  clip-path: circle(50% at 50% 50%);
+  margin-right: 16px;
+  max-height: 64px;
+`;
+
+const Desktop = styled.div`
+  @media (max-width: 420px) {
+    display: none;
+  }
+`;
+
+const Mobile = styled.div`
+  @media (min-width: 420px) {
+    display: none;
+  }
+`;
+
+export default ({ setOpen, isOpen }) => {
   return (
     <Header>
-      <Link href="#home">Home</Link>
-      <Link href="#about">About</Link>
-      <Link href="#resume">Resume</Link>
-      <Link href="#contact">Contact</Link>
+      <Profile src={profile} alt="profile_pic" />
+      <Mobile>
+        <HamburgerSlider
+          buttonWidth={32}
+          barColor="black"
+          isActive={isOpen}
+          toggleButton={() => {
+            setOpen(!isOpen);
+          }}
+        />
+        <Sidebar setOpen={setOpen} />
+      </Mobile>
+      <Desktop>
+        <Link href="#about">About</Link>
+        <Link href="#portfolio">Portfolio</Link>
+        <Link href="#resume">Resume</Link>
+      </Desktop>
     </Header>
   );
 };
