@@ -39,13 +39,15 @@ export default ({ setOpen, isOpen }) => {
     <Header>
       <Profile src={profile} alt="profile_pic" />
       <Mobile>
-        <HamburgerSlider
-          buttonWidth={32}
-          isActive={isOpen}
-          toggleButton={() => {
-            setOpen(!isOpen);
-          }}
-        />
+        {!isOpen && (
+          <HamburgerSlider
+            buttonWidth={32}
+            isActive={isOpen}
+            toggleButton={() => {
+              setOpen(!isOpen);
+            }}
+          />
+        )}
       </Mobile>
       <Desktop>
         <Link href="#portfolio">Portfolio</Link>
