@@ -33,6 +33,16 @@ export default () => {
           href="https://musicaroundme.io"
           description="Find a concert next to you"
         />
+        <PortfolioItem
+          label="Plaid integration prototype"
+          href="https://master.d1a0bk4kgw2g23.amplifyapp.com/"
+          description="POC to test plaid integration using material UI"
+        />
+        <PortfolioItem
+          label="Website todolist"
+          href="https://d3ig7nj0f1npvb.cloudfront.net/"
+          description="Todolist with graphql subscriptions"
+        />
       </ul>
     </Container>
   );
