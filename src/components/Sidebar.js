@@ -46,11 +46,11 @@ export default ({ isOpen, setOpen }) => {
       >
         <MdClose />
       </Button>
+      <LinkItem id="home" href="#home" setOpen={setOpen}>
+        Home
+      </LinkItem>
       <LinkItem id="about" href="#portfolio" setOpen={setOpen}>
         Portfolio
-      </LinkItem>
-      <LinkItem id="contact" href="/contact" setOpen={setOpen}>
-        Contact
       </LinkItem>
     </Container>
   );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Button from './Button';
 import { MdFileDownload } from 'react-icons/md';
+import Social from './Social';
 
 const bounce = keyframes`
   0% {
@@ -54,17 +55,18 @@ export default () => {
   }, []); // eslint-disable-line
 
   return (
-    <Container id="home">
+    <Container>
       <h1>Léo Raspaud</h1>
+      <Social />
       <p>French senior software engineer currently based in Sydney.</p>
-      <Button onClick={downloadResume} style={{ marginTop: 16 }}>
-        <MdFileDownload />
-        <span style={{ marginLeft: 16 }}>Resume</span>
+      <Button onClick={downloadResume} style={{ marginTop: 16 }} Icon={MdFileDownload}>
+        Resume
       </Button>
+
       <Scroll
         style={{ display: scroll < 200 ? 'block' : 'none' }}
         onClick={() => {
-          document.getElementById('about').scrollIntoView({
+          document.getElementById('portfolio').scrollIntoView({
             behavior: 'smooth',
           });
         }}

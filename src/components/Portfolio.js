@@ -1,67 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
+import PortfolioItem from './PortfolioItem';
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
   min-height: 100vh;
+  padding: 16px;
+`;
+
+const Header = styled.h2`
+  font-size: 24px;
+  font-weight: 500;
 `;
 
 export default () => {
   return (
     <Container id="portfolio">
-      <div>
-        <p>Here's a list of project I'm working on:</p>
-        <ul>
-          <li>
-            <a href="https://invited.event" target="_blank" rel="noreferrer noopener">
-              Invited
-            </a>
-          </li>
-          <li>
-            <a href="https://musicaroundme.io" target="_blank" rel="noreferrer noopener">
-              MusicAroundMe.io
-            </a>
-          </li>
-          <li>
-            <a href="https://thefuckisforlunch.com" target="_blank" rel="noreferrer noopener">
-              The fuck is for lunch?
-            </a>
-          </li>
-          <li>
-            <a href="https://dotabook.me" target="_blank" rel="noreferrer noopener">
-              Dotabook
-            </a>
-          </li>
-        </ul>
-        <div>
-          My github account:{' '}
-          <a href="https://github.com/Leo-RASPAUD" target="_blank" rel="noreferrer noopener">
-            Leo-RASPAUD
-          </a>
-        </div>
-        <div>
-          <p>Youtube channels:</p>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UC-BgJSCQ-7ZND43Qo_t8-LA?view_as=subscriber"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              CSS-tricks
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCgVmj-dtqY7Lq9enJ076C2w?view_as=subscriber"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Léo Raspaud
-            </a>
-          </li>
-        </div>
-      </div>
+      <h1>Portfolio</h1>
+      <Header>
+        As a software engineer it's important to always have personal projects to make sure to keep up with the latest
+        technologies, here's a list of things I'm working on.
+      </Header>
+      <ul>
+        <PortfolioItem label="Invited.events" href="https://invited.events" description="Invitations made simple" />
+        <PortfolioItem
+          label="The f**k is for lunch?"
+          href="https://thefuckisforlunch.com"
+          description="What's for lunch?"
+        />
+        <PortfolioItem label="Dotabook" href="https://dotabook.me" description="Dota 2 tracker" />
+        <PortfolioItem
+          label="MusicAroundMe.io"
+          href="https://musicaroundme.io"
+          description="Find a concert next to you"
+        />
+      </ul>
     </Container>
   );
 };

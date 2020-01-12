@@ -14,6 +14,7 @@ const Link = styled.a`
   font-size: 24px;
   margin: 0 8px;
   text-decoration: none;
+  color: currentColor;
 `;
 
 const Profile = styled.img`
@@ -51,7 +52,6 @@ export default ({ setOpen, isOpen }) => {
       </Mobile>
       <Desktop>
         <Link href="#portfolio">Portfolio</Link>
-        <Link href="#resume">Resume</Link>
       </Desktop>
     </Header>
   );
