@@ -1,0 +1,67 @@
+# section information
+section:
+  name: About
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+# your designation
+designation: Senior Software Engineer
+# your company information
+
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a senior software engineer with good
+knowledge of front-end techniques and
+many years of full stack development.
+I like every aspect of developing an
+application, creating a great user experience
+and a clean code is always a priority for me.
+I also like to work on personal projects when
+I have the time, I’m currently working with
+ReactJS / NodeJS / AWS'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "leo.raspaud@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/Leo-RASPAUD"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/leo-raspaud/"
+
+- name: CSS-tricks youtube channel
+  icon: "fab fa-youtube"
+  url: "https://www.youtube.com/channel/UC-BgJSCQ-7ZND43Qo_t8-LA/videos?view_as=subscriber"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow
+- name: Communication
+  percentage: 85
+  color: pink
+- name: Hard Working
+  percentage: 85
+  color: green
+- name: Fast Learner
+  percentage: 85
+  color: sky
+- name: Problem Solving
+  percentage: 85
+  color: orange

@@ -1,0 +1,105 @@
+# section information
+section:
+  name: Experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Athena home loans
+    url: "https://www.athena.com.au"
+    location: Sydney, Australia
+    # company overview
+    overview: Home loans wrecker.
+  positions:
+  - designation: Senior Software Engineer
+    start: Nov 2018
+    responsibilities:
+    - I currently work in a team of 10 senior developers. As a full stack engineer I’m working on both back-end and front-end. I mainly work on new features of the react application, bug fixing and various improvements.
+    techstack:
+    - React
+    - NodeJS
+    - AWS
+    - Salesforce
+
+- company:
+    name: Nod.
+    url: "http://noddocs.com/"
+    location: Sydney, Australia
+    overview: Great advice matters. Nod is helping financial planners, accountants, lawyers and insurance specialists to give more advice by automating document creation, compliance and review..
+  positions:
+  - designation: CTO
+    start: September 2017
+    end: November 2018
+    responsibilities:
+    - In charge of the software engineering team of Nod. My job is to manage the engineering team as well as developing the product and finding the best solutions to improve our product.
+    techstack:
+    - React
+    - NodeJS
+    - Kubernetes
+    - Docker
+
+- company:
+    name: Dexstr
+    url: "http://dexstr.io/"
+    location: Toulouse, France
+    overview: Insight engine for life sciences
+  positions:
+  - designation: Full stack engineer
+    start: Jan 2016
+    end: Aug 2017
+    responsibilities:
+    - Development of new functionalities
+    - Task automation
+    - UI/UX improvements
+    - Deployment management
+    - In charge of the frontend part of our application, my job is to design and develop the new features to improve our product. I also like to take time to check the quality of the code and take full responsibility regarding the new frameworks that we may use.
+    techstack:
+    - Angular 1.6
+    - Java
+    - Jenkins
+    - AWS
+    - Docker
+
+- company:
+    name: Decasoft
+    url: "http://dexstr.fr/"
+    location: Toulouse, France
+    overview: Consulting company
+  positions:
+  - designation: Front end lead engineer
+    start: Oct 2014
+    end: Dec 2016
+    responsibilities:
+    - Development of an internal reporting tool for Decasoft using a MEAN stack (MongoDB, ExpressJS, AngularJS, NodeJS) in complete autonomy. This tool is now being used by the whole company. This project took 7 months.
+    - I also worked as a consultant for a french hospital and worked with Java / GWT in an agile environment. We were mainly working in TDD.
+    techstack:
+    - Angular 1.6
+    - NodeJS
+    - Jenkins
+    - JAVA
+    - GWT
+
+- company:
+    name: Capgemini
+    url: "http://capgemini.com/"
+    location: Toulouse, France
+    overview: Consulting company
+  positions:
+  - designation: Full stack engineer
+    start: Apr 2011
+    end: Oct 2014
+    responsibilities:
+    - Web applications edfentreprises.fr edfcollectivites.fr
+    - Maintenance under operational conditions
+    - Technical solutions estimation / Design of technical solutions / Deployments
+    techstack:
+    - Java
+    - Oracle
+    - Struts
+    - KSH / PL/SQL
+    - Jenkins / SH

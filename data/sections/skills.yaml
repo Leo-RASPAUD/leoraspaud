@@ -1,0 +1,41 @@
+# section information
+section:
+  name: Skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: React
+  icon: "images/react.png"
+  summary: "Create web applications, mobile apps - This is what I do every day"
+  url: "https://reactjs.org/"
+
+- name: NodeJS
+  icon: "images/node.png"
+  summary: "This is what I use from most of my backend apps"
+  url: "https://nodejs.org/en/"
+
+
+- name: Cloud Computing
+  icon: "images/cloud.png"
+  summary: "Everyday use of AWS (lambda, amplify, appsync, s3, cloudfront, ec2, dynamodb...)"
+
+- name: Docker
+  icon: "images/docker.svg"
+  summary: "Basic knowledge of docker, can create a docker image and use it."
+  url: "https://www.docker.com/"
+
+- name: Git
+  icon: "images/git.png"
+  summary: "No explanation necessary here!"
+  url: "https://git-scm.com/"
+
+- name: Kubernetes
+  icon: "images/kube.png"
+  summary: "Basic knowledge, set up our whole app at Nod"
+  url: "https://kubernetes.io/"
