@@ -30,9 +30,8 @@ params:
   # background image of the landing page
   background: "images/ethan-ou-kIfFP7unxxk-unsplash.jpg"
 
-
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
+  gitRepo: https://github.com/Leo-RASPAUD
 
   # specify whether you want to write blog post or not
   enableBlogPost: false
@@ -56,8 +55,8 @@ params:
       phone: "+61438228078"
     # a summary of what you do
     summary:
-    - I am a Developer
-    - I work with ReactJS
-    - I love to play guitar
-    - JS for the win
-    - Not even scared of backend
+      - I am a Developer
+      - I work with ReactJS
+      - I love to play guitar
+      - JS for the win
+      - Not even scared of backend
