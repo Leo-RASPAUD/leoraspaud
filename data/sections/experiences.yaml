@@ -10,6 +10,21 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Data Theorem
+      url: "https://datatheorem.com/"
+      location: Toulouse, France - Palo Alto, USA
+      # company overview
+      overview: Data Theorem is a leading provider of modern application security. Its core mission is to analyze and secure any modern application anytime, anywhere. The Data Theorem Analyzer Engine continuously analyzes APIs, Web, Mobile, and Cloud applications in search of security flaws and data privacy gaps.
+    positions:
+      - designation: Lead Frontend Engineer
+        start: January 2021
+        responsibilities:
+          - In charge of a team of 5 developers, working on our portal and public facing website.
+        techstack:
+          - React
+          - GCP
+
+  - company:
       name: VoiceFoundry
       url: "https://www.voicefoundry.com.au"
       location: Sydney, Australia
