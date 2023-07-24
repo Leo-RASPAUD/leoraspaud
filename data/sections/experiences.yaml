@@ -17,7 +17,7 @@ experiences:
       overview: Data Theorem is a leading provider of modern application security. Its core mission is to analyze and secure any modern application anytime, anywhere. The Data Theorem Analyzer Engine continuously analyzes APIs, Web, Mobile, and Cloud applications in search of security flaws and data privacy gaps.
     positions:
       - designation: Lead Frontend Engineer
-        start: January 2021
+        start: August 2021
         responsibilities:
           - In charge of a team of 5 developers, working on our portal and public facing website.
         techstack:
@@ -33,6 +33,7 @@ experiences:
     positions:
       - designation: Senior Software Engineer
         start: January 2021
+        end: August 2021
         responsibilities:
           - Working in a team of 9 developpers in Australia and Indonesia. We build and deploy applications using React / NodeJS on AWS.
         techstack:
