@@ -1,7 +1,7 @@
-baseURL: http://example.org/
+baseURL: https://leoraspaud.com/
 languageCode: en-us
 title: "Leo Raspaud"
-theme: "toha"
+# No theme - using custom layouts
 
 # Allow raw html in markdown file
 markup:
