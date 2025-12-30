@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leo Raspaud — Senior Software Engineer</title>
-  <meta name="description" content="Portfolio of Leo Raspaud - Lead Frontend Engineer specializing in React, NodeJS, and Cloud Architecture">
+  <meta name="description" content="Leo Raspaud — Lead Frontend Engineer with 13+ years experience. Specializing in React, Node.js, TypeScript, and cloud-native architectures.">
   <link rel="icon" type="image/png" href="/assets/images/favicon.png">
   
   <!-- Fonts -->
@@ -126,6 +126,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
     .nav-logo {
@@ -136,12 +137,16 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-decoration: none;
+      min-width: 100px;
     }
 
     .nav-links {
       display: flex;
       gap: 40px;
       list-style: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .nav-links a {
@@ -183,6 +188,8 @@
       cursor: pointer;
       text-decoration: none;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-width: 100px;
+      text-align: center;
     }
 
     .nav-cta:hover {
@@ -194,6 +201,7 @@
     .hero {
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 120px 40px 80px;
@@ -202,12 +210,15 @@
 
     .hero-content {
       max-width: 900px;
+      margin: 0 auto;
       text-align: center;
+      width: 100%;
     }
 
     .hero-badge {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       padding: 8px 16px;
       background: var(--gradient-subtle);
@@ -215,7 +226,7 @@
       border-radius: 50px;
       font-size: 0.85rem;
       color: var(--text-secondary);
-      margin-bottom: 32px;
+      margin: 0 auto 32px;
       animation: fadeInUp 0.8s ease forwards;
     }
 
@@ -240,7 +251,8 @@
       border: 3px solid transparent;
       background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
                   var(--gradient-accent) border-box;
-      margin-bottom: 32px;
+      margin: 0 auto 32px;
+      display: block;
       animation: fadeInUp 0.8s ease 0.1s forwards;
       opacity: 0;
     }
@@ -1077,14 +1089,14 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
-        Available for new opportunities
+        Open to opportunities
       </div>
       <img src="images/profile.PNG" alt="Leo Raspaud" class="hero-image">
-      <h1>Hi, I'm <span>Leo Raspaud</span></h1>
-      <p class="hero-subtitle">Lead Frontend Engineer at Data Theorem, passionate about creating exceptional user experiences with React, Node.js, and cloud technologies.</p>
+      <h1>I'm <span>Leo Raspaud</span></h1>
+      <p class="hero-subtitle">Lead Frontend Engineer specializing in building scalable web applications with React, Node.js, and cloud-native architectures. Currently leading frontend development at Data Theorem.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
-        <a href="#projects" class="btn btn-secondary">View Projects</a>
+        <a href="#experience" class="btn btn-secondary">View Experience</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -1099,8 +1111,8 @@
   <section id="about">
     <div class="section-header animate-on-scroll">
       <span class="section-tag">About</span>
-      <h2 class="section-title">A bit about me</h2>
-      <p class="section-subtitle">Crafting digital experiences from Sydney to Palo Alto</p>
+      <h2 class="section-title">Background</h2>
+      <p class="section-subtitle">Engineering leader with a global perspective</p>
     </div>
     <div class="about-grid">
       <div class="about-image-container animate-on-scroll">
@@ -1119,16 +1131,16 @@
             <div class="stat-label">Continents</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">∞</div>
-            <div class="stat-label">Lines of Code</div>
+            <div class="stat-number">CTO</div>
+            <div class="stat-label">Previous Role</div>
           </div>
         </div>
       </div>
       <div class="about-content animate-on-scroll">
-        <h3>Senior Software Engineer & Team Lead</h3>
-        <p>I'm a senior software engineer with extensive knowledge of front-end techniques and many years of full-stack development. I care deeply about every aspect of building an application—creating great user experiences and writing clean, maintainable code is always a priority.</p>
-        <p>Currently leading a team of 5 developers at <strong>Data Theorem</strong>, working on security products that protect modern applications. I've worked across France, Australia, and the USA, bringing a global perspective to software development.</p>
-        <p>When I'm not coding, you might find me playing guitar or exploring the latest tech trends. I love building side projects (check out my GitHub!) and staying on the cutting edge of web development.</p>
+        <h3>Senior Software Engineer & Engineering Lead</h3>
+        <p>I am a senior software engineer with deep expertise in frontend architecture and full-stack development. I am passionate about building performant, user-centric applications with clean, maintainable codebases.</p>
+        <p>Currently leading a team of 5 engineers at <strong>Data Theorem</strong>, where we build security products that protect modern applications. My career has spanned France, Australia, and the USA, giving me a unique global perspective on software development and team leadership.</p>
+        <p>Outside of work, I enjoy exploring emerging technologies and building side projects. I'm always looking for new challenges and opportunities to grow.</p>
         
         <div class="about-highlights">
           <span class="highlight-tag">React / Next.js</span>
@@ -1161,8 +1173,8 @@
   <section id="skills">
     <div class="section-header animate-on-scroll">
       <span class="section-tag">Skills</span>
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-subtitle">Technologies I work with daily</p>
+      <h2 class="section-title">Technical Expertise</h2>
+      <p class="section-subtitle">Core technologies and platforms</p>
     </div>
     <div class="skills-grid">
       <div class="skill-card animate-on-scroll">
@@ -1170,42 +1182,42 @@
           <img src="images/react.png" alt="React">
         </div>
         <h3>React / Next.js</h3>
-        <p>Building modern web applications and mobile apps with React ecosystem. This is what I do every single day.</p>
+        <p>Expert-level proficiency in building scalable web applications, SPAs, and mobile apps using the React ecosystem and modern frontend tooling.</p>
       </div>
       <div class="skill-card animate-on-scroll">
         <div class="skill-icon">
           <img src="images/node.png" alt="Node.js">
         </div>
         <h3>Node.js</h3>
-        <p>My go-to for backend development. APIs, microservices, and serverless functions.</p>
+        <p>Extensive experience building RESTful APIs, GraphQL services, microservices architectures, and serverless applications.</p>
       </div>
       <div class="skill-card animate-on-scroll">
         <div class="skill-icon">
           <img src="images/cloud.png" alt="Cloud">
         </div>
-        <h3>Cloud (AWS / GCP)</h3>
-        <p>Extensive experience with Lambda, Amplify, AppSync, S3, CloudFront, EC2, DynamoDB, and GCP services.</p>
+        <h3>Cloud Platforms (AWS / GCP)</h3>
+        <p>Proficient with Lambda, Amplify, AppSync, S3, CloudFront, EC2, DynamoDB, and Google Cloud Platform services.</p>
       </div>
       <div class="skill-card animate-on-scroll">
         <div class="skill-icon">
           <img src="images/docker.svg" alt="Docker">
         </div>
         <h3>Docker</h3>
-        <p>Containerization for development and production environments. Making apps portable and consistent.</p>
+        <p>Containerization expertise for consistent development and production environments, enabling portable and reproducible deployments.</p>
       </div>
       <div class="skill-card animate-on-scroll">
         <div class="skill-icon">
           <img src="images/kube.png" alt="Kubernetes">
         </div>
         <h3>Kubernetes</h3>
-        <p>Container orchestration at scale. Set up complete production infrastructure at previous roles.</p>
+        <p>Experience designing and deploying production-grade container orchestration infrastructure for high-availability applications.</p>
       </div>
       <div class="skill-card animate-on-scroll">
         <div class="skill-icon">
           <img src="images/git.png" alt="Git">
         </div>
-        <h3>Git & DevOps</h3>
-        <p>Version control, CI/CD pipelines, and modern development workflows. No explanation needed here!</p>
+        <h3>DevOps & CI/CD</h3>
+        <p>Strong foundation in version control, automated testing, continuous integration, and deployment pipeline design.</p>
       </div>
     </div>
   </section>
@@ -1214,8 +1226,8 @@
   <section id="experience">
     <div class="section-header animate-on-scroll">
       <span class="section-tag">Experience</span>
-      <h2 class="section-title">Career Journey</h2>
-      <p class="section-subtitle">From France to Australia to the USA</p>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">13+ years across startups, scale-ups, and enterprise</p>
     </div>
     <div class="experience-timeline">
       <div class="experience-item animate-on-scroll">
@@ -1228,8 +1240,8 @@
             </div>
             <span class="experience-date">Aug 2021 → Present</span>
           </div>
-          <p class="experience-location">📍 Toulouse, France / Palo Alto, USA</p>
-          <p class="experience-description">Leading a team of 5 developers, building our customer portal and public-facing website. Data Theorem is a leading provider of modern application security, analyzing APIs, Web, Mobile, and Cloud applications for security flaws.</p>
+          <p class="experience-location">📍 Los Angeles, California, USA</p>
+          <p class="experience-description">Leading a team of 5 engineers responsible for developing and maintaining the customer portal and public-facing web properties. Driving frontend architecture decisions and implementing best practices for a security-focused SaaS platform.</p>
           <div class="experience-tech">
             <span class="tech-tag">React</span>
             <span class="tech-tag">GCP</span>
@@ -1249,7 +1261,7 @@
             <span class="experience-date">Jan 2021 → Aug 2021</span>
           </div>
           <p class="experience-location">📍 Sydney, Australia</p>
-          <p class="experience-description">Worked in a team of 9 developers across Australia and Indonesia, building and deploying applications using React/NodeJS on AWS. Experts in delivering customer experiences with Amazon Connect.</p>
+          <p class="experience-description">Collaborated with a distributed team of 9 engineers across Australia and Indonesia to build and deploy enterprise contact center solutions using React, Node.js, and AWS infrastructure.</p>
           <div class="experience-tech">
             <span class="tech-tag">React</span>
             <span class="tech-tag">AWS</span>
@@ -1270,7 +1282,7 @@
             <span class="experience-date">Jul 2020 → Oct 2020</span>
           </div>
           <p class="experience-location">📍 Sydney, Australia</p>
-          <p class="experience-description">Worked in a distributed team across France, Australia, and USA. Focused on frontend development, building new features and improving the React application for this leading customer service platform.</p>
+          <p class="experience-description">Contributed to a globally distributed engineering team, focusing on frontend development and feature implementation for a leading customer service automation platform.</p>
           <div class="experience-tech">
             <span class="tech-tag">React</span>
             <span class="tech-tag">Node.js</span>
@@ -1290,7 +1302,7 @@
             <span class="experience-date">Nov 2018 → Jul 2020</span>
           </div>
           <p class="experience-location">📍 Sydney, Australia</p>
-          <p class="experience-description">Full-stack engineer in a team of 10 senior developers. Worked on new features, bug fixes, and improvements across the React application and backend services.</p>
+          <p class="experience-description">Full-stack engineer within a team of 10 senior developers, delivering new features and performance improvements across the React frontend and Node.js backend services for a fintech mortgage platform.</p>
           <div class="experience-tech">
             <span class="tech-tag">React</span>
             <span class="tech-tag">Node.js</span>
@@ -1311,7 +1323,7 @@
             <span class="experience-date">Sep 2017 → Nov 2018</span>
           </div>
           <p class="experience-location">📍 Sydney, Australia</p>
-          <p class="experience-description">Led the software engineering team at Nod, a fintech helping financial planners automate document creation and compliance. Managed the team while actively developing the product.</p>
+          <p class="experience-description">Led the engineering organization for a fintech startup, overseeing technical strategy, architecture decisions, and product development. Managed the team while actively contributing to the codebase.</p>
           <div class="experience-tech">
             <span class="tech-tag">React</span>
             <span class="tech-tag">Node.js</span>
@@ -1332,7 +1344,7 @@
             <span class="experience-date">Jan 2016 → Aug 2017</span>
           </div>
           <p class="experience-location">📍 Toulouse, France</p>
-          <p class="experience-description">Led frontend development for this life sciences insight engine. Designed and developed new features, managed deployments, and maintained high code quality standards.</p>
+          <p class="experience-description">Led frontend development for an enterprise life sciences platform, designing and implementing new features while establishing deployment processes and code quality standards.</p>
           <div class="experience-tech">
             <span class="tech-tag">Angular</span>
             <span class="tech-tag">Java</span>
@@ -1354,7 +1366,7 @@
             <span class="experience-date">Oct 2014 → Dec 2016</span>
           </div>
           <p class="experience-location">📍 Toulouse, France</p>
-          <p class="experience-description">Built an internal reporting tool using MEAN stack (MongoDB, Express, Angular, Node.js) in complete autonomy. Also consulted for a French hospital working with Java/GWT in an agile TDD environment.</p>
+          <p class="experience-description">Independently developed an internal reporting platform using the MEAN stack. Additionally provided consulting services for a healthcare client, working with Java/GWT in an agile TDD environment.</p>
           <div class="experience-tech">
             <span class="tech-tag">Angular</span>
             <span class="tech-tag">Node.js</span>
@@ -1375,7 +1387,7 @@
             <span class="experience-date">Apr 2011 → Oct 2014</span>
           </div>
           <p class="experience-location">📍 Toulouse, France</p>
-          <p class="experience-description">Developed web applications for EDF (French energy company). Handled maintenance, technical solutions estimation, design, and deployments.</p>
+          <p class="experience-description">Developed and maintained enterprise web applications for EDF, a major French energy company. Responsibilities included technical solution design, estimation, and deployment management.</p>
           <div class="experience-tech">
             <span class="tech-tag">Java</span>
             <span class="tech-tag">Oracle</span>
@@ -1391,13 +1403,13 @@
   <section id="projects">
     <div class="section-header animate-on-scroll">
       <span class="section-tag">Projects</span>
-      <h2 class="section-title">Side Projects</h2>
-      <p class="section-subtitle">Things I've built in my spare time</p>
+      <h2 class="section-title">Personal Projects</h2>
+      <p class="section-subtitle">Independent work and experiments</p>
     </div>
     
     <div class="projects-intro animate-on-scroll">
       <span class="projects-intro-icon">💡</span>
-      <p>I regularly work on side projects but don't always publish them publicly. For my latest experiments and code, <a href="https://github.com/Leo-RASPAUD" target="_blank">check out my GitHub →</a></p>
+      <p>I regularly build side projects to explore new technologies, though not all are published publicly. For my latest work and contributions, <a href="https://github.com/Leo-RASPAUD" target="_blank">visit my GitHub profile →</a></p>
     </div>
 
     <div class="projects-grid">
@@ -1409,7 +1421,7 @@
           </div>
         </div>
         <p class="project-role">Owner • March 2018 - 2020</p>
-        <p>Invitations made simple. A web app to create and manage event invitations with ease.</p>
+          <p>Event invitation management platform enabling users to create, send, and track invitations seamlessly.</p>
         <div class="project-links">
           <a href="https://github.com/Leo-RASPAUD/invited" class="project-link" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -1426,7 +1438,7 @@
           </div>
         </div>
         <p class="project-role">Owner • Jun 2017 - 2019</p>
-        <p>Get all the concerts next to you displayed on a simple, interactive map.</p>
+          <p>Location-based concert discovery application with interactive mapping and event aggregation.</p>
         <div class="project-links">
           <a href="https://github.com/Leo-RASPAUD/musicaroundme" class="project-link" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -1438,12 +1450,12 @@
       <div class="project-card deprecated animate-on-scroll">
         <div class="project-header">
           <div>
-            <h3>The f*** is for lunch?</h3>
+            <h3>What's For Lunch?</h3>
             <span class="deprecated-badge">Deprecated</span>
           </div>
         </div>
         <p class="project-role">Owner • Jun 2019 - 2020</p>
-        <p>Random lunch place finder. Can't decide? Let the app pick for you!</p>
+          <p>Randomized restaurant recommendation tool leveraging location services to suggest nearby dining options.</p>
         <div class="project-links">
           <a href="https://github.com/Leo-RASPAUD/whatsforlunch" class="project-link" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -1460,7 +1472,7 @@
           </div>
         </div>
         <p class="project-role">Owner • Oct 2017 - 2019</p>
-        <p>DOTA 2 game tracker and statistics dashboard for tracking your performance.</p>
+          <p>Gaming statistics dashboard providing match history, performance analytics, and player tracking.</p>
         <div class="project-links">
           <a href="https://github.com/Leo-RASPAUD/dotabook" class="project-link" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -1474,8 +1486,8 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="contact-container animate-on-scroll">
-      <h2>Let's work together</h2>
-      <p>Have a project in mind or just want to chat? I'm always open to discussing new opportunities and ideas.</p>
+      <h2>Let's Connect</h2>
+      <p>Interested in discussing opportunities, collaborations, or just connecting? I'd be happy to hear from you.</p>
       <div class="contact-links">
         <a href="mailto:leo.raspaud@gmail.com" class="btn btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
@@ -1495,7 +1507,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 Leo Raspaud. Built with ☕ and modern CSS.</p>
+    <p>© 2024 Leo Raspaud</p>
   </footer>
 
   <script>

@@ -12,7 +12,7 @@ experiences:
   - company:
       name: Data Theorem
       url: "https://datatheorem.com/"
-      location: Los Angeles, California, USA
+      location: image.png
       # company overview
       overview: Data Theorem is a leading provider of modern application security. Its core mission is to analyze and secure any modern application anytime, anywhere. The Data Theorem Analyzer Engine continuously analyzes APIs, Web, Mobile, and Cloud applications in search of security flaws and data privacy gaps.
     positions:
