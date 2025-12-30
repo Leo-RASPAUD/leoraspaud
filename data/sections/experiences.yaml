@@ -4,90 +4,71 @@ section:
   enable: true
   weight: 3
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
 # Your experiences
 experiences:
   - company:
       name: Data Theorem
       url: "https://datatheorem.com/"
-      location: image.png
-      # company overview
-      overview: Data Theorem is a leading provider of modern application security. Its core mission is to analyze and secure any modern application anytime, anywhere. The Data Theorem Analyzer Engine continuously analyzes APIs, Web, Mobile, and Cloud applications in search of security flaws and data privacy gaps.
+      location: Los Angeles, California, USA
+      overview: Data Theorem is a leading provider of modern application security, analyzing and securing APIs, Web, Mobile, and Cloud applications.
     positions:
       - designation: Lead Frontend Engineer
-        start: August 2021
+        start: Aug 2021
         responsibilities:
-          - In charge of a team of 5 developers, working on our portal and public facing website.
+          - Leading a team of 5 engineers responsible for developing and maintaining the customer portal and public-facing web properties. Driving frontend architecture decisions and implementing best practices for a security-focused SaaS platform.
         techstack:
           - React
+          - TypeScript
           - GCP
 
   - company:
       name: VoiceFoundry
       url: "https://www.voicefoundry.com.au"
       location: Sydney, Australia
-      # company overview
       overview: Experts in delivering amazing customer experiences with Amazon Connect.
     positions:
       - designation: Senior Software Engineer
-        start: January 2021
-        end: August 2021
+        start: Jan 2021
+        end: Aug 2021
         responsibilities:
-          - Working in a team of 9 developpers in Australia and Indonesia. We build and deploy applications using React / NodeJS on AWS.
+          - Collaborated with a distributed team of 9 engineers across Australia and Indonesia to build and deploy enterprise contact center solutions using React, Node.js, and AWS infrastructure.
         techstack:
           - React
           - AWS
-          - Cloudformation
-          - NodeJS
-
-  - company:
-      name: ColorTV
-      url: "https://www.colortv.me"
-      location: Sydney, Australia
-      # company overview
-      overview: Live concerts from your couch.
-    positions:
-      - designation: Senior Software Engineer
-        start: July 2020
-        end: October 2020
-        responsibilities:
-          - Built frontend website application from scratch.
-        techstack:
-          - React
+          - CloudFormation
+          - Node.js
 
   - company:
       name: Gorgias
       url: "https://www.gorgias.com"
       location: Sydney, Australia
-      # company overview
       overview: The best merchants grow through exceptional customer service.
     positions:
       - designation: Senior Software Engineer
-        start: July 2020
-        end: October 2020
+        start: Jul 2020
+        end: Oct 2020
         responsibilities:
-          - I currently work in a team of engineers between france, australia and USA. My focus is mainly on the front-end part of the application, developping new features and improving the react application.
+          - Contributed to a globally distributed engineering team spanning France, Australia, and USA, focusing on frontend development and feature implementation for a leading customer service automation platform.
         techstack:
           - React
-          - NodeJS
-          - Google Cloud Platform
+          - Node.js
+          - GCP
 
   - company:
-      name: Athena home loans
+      name: Athena Home Loans
       url: "https://www.athena.com.au"
       location: Sydney, Australia
-      # company overview
-      overview: Home loans wrecker.
+      overview: Digital-first home loan provider disrupting traditional mortgage lending.
     positions:
       - designation: Senior Software Engineer
         start: Nov 2018
+        end: Jul 2020
         responsibilities:
-          - I currently work in a team of 10 senior developers. As a full stack engineer I’m working on both back-end and front-end. I mainly work on new features of the react application, bug fixing and various improvements.
+          - Full-stack engineer within a team of 10 senior developers, delivering new features and performance improvements across the React frontend and Node.js backend services for a fintech mortgage platform.
         techstack:
           - React
-          - NodeJS
+          - Node.js
           - AWS
           - Salesforce
 
@@ -95,16 +76,16 @@ experiences:
       name: Nod.
       url: "http://noddocs.com/"
       location: Sydney, Australia
-      overview: Great advice matters. Nod is helping financial planners, accountants, lawyers and insurance specialists to give more advice by automating document creation, compliance and review..
+      overview: Fintech startup automating document creation, compliance, and review for financial professionals.
     positions:
       - designation: CTO
-        start: September 2017
-        end: November 2018
+        start: Sep 2017
+        end: Nov 2018
         responsibilities:
-          - In charge of the software engineering team of Nod. My job is to manage the engineering team as well as developing the product and finding the best solutions to improve our product.
+          - Led the engineering organization for a fintech startup, overseeing technical strategy, architecture decisions, and product development. Managed the team while actively contributing to the codebase.
         techstack:
           - React
-          - NodeJS
+          - Node.js
           - Kubernetes
           - Docker
 
@@ -112,19 +93,15 @@ experiences:
       name: Dexstr
       url: "http://dexstr.io/"
       location: Toulouse, France
-      overview: Insight engine for life sciences
+      overview: Insight engine for life sciences.
     positions:
-      - designation: Full stack engineer
+      - designation: Full Stack Engineer
         start: Jan 2016
         end: Aug 2017
         responsibilities:
-          - Development of new functionalities
-          - Task automation
-          - UI/UX improvements
-          - Deployment management
-          - In charge of the frontend part of our application, my job is to design and develop the new features to improve our product. I also like to take time to check the quality of the code and take full responsibility regarding the new frameworks that we may use.
+          - Led frontend development for an enterprise life sciences platform, designing and implementing new features while establishing deployment processes and code quality standards.
         techstack:
-          - Angular 1.6
+          - Angular
           - Java
           - Jenkins
           - AWS
@@ -132,39 +109,34 @@ experiences:
 
   - company:
       name: Decasoft
-      url: "http://dexstr.fr/"
+      url: "http://decasoft.fr/"
       location: Toulouse, France
-      overview: Consulting company
+      overview: Technology consulting company.
     positions:
-      - designation: Front end lead engineer
+      - designation: Frontend Lead Engineer
         start: Oct 2014
         end: Dec 2016
         responsibilities:
-          - Development of an internal reporting tool for Decasoft using a MEAN stack (MongoDB, ExpressJS, AngularJS, NodeJS) in complete autonomy. This tool is now being used by the whole company. This project took 7 months.
-          - I also worked as a consultant for a french hospital and worked with Java / GWT in an agile environment. We were mainly working in TDD.
+          - Independently developed an internal reporting platform using the MEAN stack (MongoDB, Express, Angular, Node.js). Additionally provided consulting services for a healthcare client, working with Java/GWT in an agile TDD environment.
         techstack:
-          - Angular 1.6
-          - NodeJS
-          - Jenkins
-          - JAVA
+          - Angular
+          - Node.js
+          - Java
           - GWT
 
   - company:
       name: Capgemini
       url: "http://capgemini.com/"
       location: Toulouse, France
-      overview: Consulting company
+      overview: Global technology consulting and services company.
     positions:
-      - designation: Full stack engineer
+      - designation: Full Stack Engineer
         start: Apr 2011
         end: Oct 2014
         responsibilities:
-          - Web applications edfentreprises.fr edfcollectivites.fr
-          - Maintenance under operational conditions
-          - Technical solutions estimation / Design of technical solutions / Deployments
+          - Developed and maintained enterprise web applications for EDF, a major French energy company. Responsibilities included technical solution design, estimation, and deployment management.
         techstack:
           - Java
           - Oracle
           - Struts
-          - KSH / PL/SQL
-          - Jenkins / SH
+          - PL/SQL

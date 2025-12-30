@@ -1231,28 +1231,31 @@
     </div>
     <div class="experience-timeline">
       {{ range .Site.Data.sections.experiences.experiences }}
+      {{ $company := .company }}
+      {{ range .positions }}
       <div class="experience-item animate-on-scroll">
         <div class="experience-dot"></div>
         <div class="experience-card">
           <div class="experience-header">
             <div class="experience-title">
               <h3>{{ .designation }}</h3>
-              <h4><a href="{{ .company.url }}" target="_blank">{{ .company.name }}</a></h4>
+              <h4><a href="{{ $company.url }}" target="_blank">{{ $company.name }}</a></h4>
             </div>
             <span class="experience-date">{{ .start }} → {{ if .end }}{{ .end }}{{ else }}Present{{ end }}</span>
           </div>
-          <p class="experience-location">📍 {{ .company.location }}</p>
+          <p class="experience-location">📍 {{ $company.location }}</p>
           {{ range .responsibilities }}
           <p class="experience-description">{{ . }}</p>
           {{ end }}
           <div class="experience-tech">
-            {{ range .badges }}
+            {{ range .techstack }}
             <span class="tech-tag">{{ . }}</span>
             {{ end }}
           </div>
         </div>
       </div>
-        {{ end }}
+      {{ end }}
+      {{ end }}
     </div>
   </section>
 
@@ -1270,12 +1273,12 @@
     </div>
 
     <div class="projects-grid">
-      {{ range .Site.Data.sections.projects.items }}
-      <div class="project-card deprecated animate-on-scroll">
+      {{ range .Site.Data.sections.projects.projects }}
+      <div class="project-card{{ if .deprecated }} deprecated{{ end }} animate-on-scroll">
         <div class="project-header">
           <div>
             <h3>{{ .name }}</h3>
-            <span class="deprecated-badge">Deprecated</span>
+            {{ if .deprecated }}<span class="deprecated-badge">Deprecated</span>{{ end }}
           </div>
         </div>
         <p class="project-role">{{ .role }} • {{ .timeline }}</p>

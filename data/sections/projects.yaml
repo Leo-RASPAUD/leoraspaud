@@ -10,38 +10,38 @@ sideProjectsNote: "I regularly work on side projects but don't always publish th
 
 # your projects
 projects:
-- name: "Invited.events (Deprecated)"
-  role: Owner
-  timeline: "March 2018 - 2020"
-  repo: https://github.com/Leo-RASPAUD/invited
-  url: "https://www.invited.events/"
-  summary: Invitations made simple.
-  tags: ["deprecated"]
-  deprecated: true
+  - name: "Invited.events"
+    role: Owner
+    timeline: "Mar 2018 - 2020"
+    repo: https://github.com/Leo-RASPAUD/invited
+    url: "https://www.invited.events/"
+    summary: Event invitation management platform enabling users to create, send, and track invitations seamlessly.
+    tags: ["deprecated"]
+    deprecated: true
 
-- name: "MusicAroundMe.io (Deprecated)"
-  role: Owner
-  timeline: "Jun 2017 - 2019"
-  repo: https://github.com/Leo-RASPAUD/musicaroundme
-  url: "https://www.musicaroundme.io/"
-  summary: Get all the concerts next to you in a simple map.
-  tags: ["deprecated"]
-  deprecated: true
+  - name: "MusicAroundMe.io"
+    role: Owner
+    timeline: "Jun 2017 - 2019"
+    repo: https://github.com/Leo-RASPAUD/musicaroundme
+    url: "https://www.musicaroundme.io/"
+    summary: Location-based concert discovery application with interactive mapping and event aggregation.
+    tags: ["deprecated"]
+    deprecated: true
 
-- name: "The f*** is for lunch? (Deprecated)"
-  role: Owner
-  timeline: "Jun 2019 - 2020"
-  url: "https://www.thefuckisforlunch.com/"
-  repo: https://github.com/Leo-RASPAUD/whatsforlunch
-  summary: Random lunch place next to you.
-  tags: ["deprecated"]
-  deprecated: true
+  - name: "What's For Lunch?"
+    role: Owner
+    timeline: "Jun 2019 - 2020"
+    url: "https://www.thefuckisforlunch.com/"
+    repo: https://github.com/Leo-RASPAUD/whatsforlunch
+    summary: Randomized restaurant recommendation tool leveraging location services to suggest nearby dining options.
+    tags: ["deprecated"]
+    deprecated: true
 
-- name: "Dotabook (Deprecated)"
-  role: Owner
-  timeline: "Oct 2017 - 2019"
-  repo: https://github.com/Leo-RASPAUD/dotabook
-  url: "https://dotabook.me/" 
-  summary: DOTA 2 tracker.
-  tags: ["deprecated"]
-  deprecated: true
+  - name: "Dotabook"
+    role: Owner
+    timeline: "Oct 2017 - 2019"
+    repo: https://github.com/Leo-RASPAUD/dotabook
+    url: "https://dotabook.me/"
+    summary: Gaming statistics dashboard providing match history, performance analytics, and player tracking.
+    tags: ["deprecated"]
+    deprecated: true
