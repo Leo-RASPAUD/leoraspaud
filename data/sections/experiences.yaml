@@ -16,7 +16,10 @@ experiences:
       - designation: Lead Frontend Engineer
         start: Aug 2021
         responsibilities:
-          - Leading a team of 5 engineers responsible for developing and maintaining the customer portal and public-facing web properties. Driving frontend architecture decisions and implementing best practices for a security-focused SaaS platform.
+          - Leading a team of 5 engineers responsible for developing and maintaining the customer portal and public-facing web properties.
+          - Own the full engineering workflow—managing Jira processes, sprint planning, and ticket prioritization in close collaboration with the Product team to align technical execution with business needs.
+          - Drive frontend architecture decisions and implement best practices for a security-focused SaaS platform.
+          - Manage team operations including performance reviews, career development conversations, and resource allocation.
         techstack:
           - React
           - TypeScript
